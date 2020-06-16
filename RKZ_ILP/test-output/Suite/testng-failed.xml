@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Brahmith"/>
+        <include name="Janaki_EOD_set11"/>
+        <include name="Janaki"/>
+        <include name="Anoop"/>
+        <include name="Ratikanta_ILP"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.QCStore">
+        <methods>
+          <include name="RKZ_ILP_Deposit_Menu_Txn"/>
+          <include name="ILP_ProcessClear"/>
+          <include name="setup"/>
+          <include name="ILP_voidRefinance"/>
+          <include name="RKZ_ILP_GraceDays_Deposit_Menu_Txn"/>
+          <include name="endReport"/>
+          <include name="killProcess"/>
+          <include name="RQC_Bankruptcy_Discharge_Txn_Testdata"/>
+          <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
+          <include name="getResult"/>
+          <include name="ILP_RefinanceStepUpVoid"/>
+          <include name="RKZ_ILP_Deposit_MidDay_Txn"/>
+          <include name="ILP_agerescindtest"/>
+          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
+          <include name="ILP_CheckAutoClear"/>
+          <include name="RQC_Bankruptcy_WORecovery_Txn_Testdata"/>
+          <include name="JQC_ILP_Deceased_Txn"/>
+          <include name="JQC_ILP_Deposit_EOD_Txn"/>
+          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
+          <include name="RKZ_ILP_Deposit_dropdown_Txn"/>
+          <include name="RKZ_ILP_GraceDays_Deposit_dropdown_Txn"/>
+        </methods>
+      </class> <!-- tests.QCStore -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
